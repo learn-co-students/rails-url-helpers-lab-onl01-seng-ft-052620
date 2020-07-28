@@ -1,0 +1,2 @@
+Could not find generator 'add_column_to_students'. Maybe you meant 'coffee:assets', 'scaffold_controller' or 'test_unit:plugin'
+Run `rails generate --help` for more options.
