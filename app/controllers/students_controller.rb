@@ -7,6 +7,11 @@ class StudentsController < ApplicationController
 
   def show
   end
+  def activate  
+    set_student.active_student
+    redirect_to @student 
+  end
+
 
   private
 
