@@ -1,2 +1,10 @@
-<h1><%= @student.to_s %></h1>
+<% @students.each do |student| %>
 
+<h1><%= @student.to_s %></h1>
+<% end %>
+<% if @student.active %>
+  This student is currently active.
+<% else %>
+  This student is currently inactive.
+
+<% end %>

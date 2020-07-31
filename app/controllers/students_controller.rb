@@ -6,8 +6,9 @@ class StudentsController < ApplicationController
   end
 
   def show
-    self.first_name + " " + self.last_name
-    render 'show'
+    @students = Student.all
+    @student.first_name + " " + @student.last_name
+    render 'show.html.erb'
   end
 
   def activate
